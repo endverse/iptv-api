@@ -49,12 +49,12 @@ def show_txt():
     return get_result_file_content(path=config.final_file, file_type="txt")
 
 
-@app.route("/ipv4/txt")
+@app.route("/ipv4.txt")
 def show_ipv4_txt():
     return get_result_file_content(path=constants.ipv4_result_path, file_type="txt")
 
 
-@app.route("/ipv6/txt")
+@app.route("/ipv6.txt")
 def show_ipv6_txt():
     return get_result_file_content(path=constants.ipv6_result_path, file_type="txt")
 
@@ -65,17 +65,17 @@ def show_live():
                                    file_type="m3u" if config.open_m3u_result else "txt")
 
 
-@app.route("/live/txt")
+@app.route("/live.txt")
 def show_live_txt():
     return get_result_file_content(path=constants.live_result_path, file_type="txt")
 
 
-@app.route("/live/ipv4/txt")
+@app.route("/live/ipv4.txt")
 def show_live_ipv4_txt():
     return get_result_file_content(path=constants.live_ipv4_result_path, file_type="txt")
 
 
-@app.route("/live/ipv6/txt")
+@app.route("/live/ipv6.txt")
 def show_live_ipv6_txt():
     return get_result_file_content(path=constants.live_ipv6_result_path, file_type="txt")
 
@@ -86,17 +86,17 @@ def show_hls():
                                    file_type="m3u" if config.open_m3u_result else "txt")
 
 
-@app.route("/hls/txt")
+@app.route("/hls.txt")
 def show_hls_txt():
     return get_result_file_content(path=constants.hls_result_path, file_type="txt")
 
 
-@app.route("/hls/ipv4/txt")
+@app.route("/hls/ipv4.txt")
 def show_hls_ipv4_txt():
     return get_result_file_content(path=constants.hls_ipv4_result_path, file_type="txt")
 
 
-@app.route("/hls/ipv6/txt")
+@app.route("/hls/ipv6.txt")
 def show_hls_ipv6_txt():
     return get_result_file_content(path=constants.hls_ipv6_result_path, file_type="txt")
 
@@ -106,17 +106,17 @@ def show_m3u():
     return get_result_file_content(path=config.final_file, file_type="m3u")
 
 
-@app.route("/live/m3u")
+@app.route("/live.m3u")
 def show_live_m3u():
     return get_result_file_content(path=constants.live_result_path, file_type="m3u")
 
 
-@app.route("/hls/m3u")
+@app.route("/hls.m3u")
 def show_hls_m3u():
     return get_result_file_content(path=constants.hls_result_path, file_type="m3u")
 
 
-@app.route("/ipv4/m3u")
+@app.route("/ipv4.m3u")
 def show_ipv4_m3u():
     return get_result_file_content(path=constants.ipv4_result_path, file_type="m3u")
 
@@ -129,7 +129,7 @@ def show_ipv4_result():
     )
 
 
-@app.route("/ipv6/m3u")
+@app.route("/ipv6.m3u")
 def show_ipv6_m3u():
     return get_result_file_content(path=constants.ipv6_result_path, file_type="m3u")
 
@@ -142,22 +142,22 @@ def show_ipv6_result():
     )
 
 
-@app.route("/live/ipv4/m3u")
+@app.route("/live/ipv4.m3u")
 def show_live_ipv4_m3u():
     return get_result_file_content(path=constants.live_ipv4_result_path, file_type="m3u")
 
 
-@app.route("/live/ipv6/m3u")
+@app.route("/live/ipv6.m3u")
 def show_live_ipv6_m3u():
     return get_result_file_content(path=constants.live_ipv6_result_path, file_type="m3u")
 
 
-@app.route("/hls/ipv4/m3u")
+@app.route("/hls/ipv4.m3u")
 def show_hls_ipv4_m3u():
     return get_result_file_content(path=constants.hls_ipv4_result_path, file_type="m3u")
 
 
-@app.route("/hls/ipv6/m3u")
+@app.route("/hls/ipv6.m3u")
 def show_hls_ipv6_m3u():
     return get_result_file_content(path=constants.hls_ipv6_result_path, file_type="m3u")
 
